@@ -55,10 +55,20 @@ export default function Home() {
   }
 
   //point update
-  function updateDiv(info:any,id:number){
-    const currentDiv = divs.filter((d)=>d.id = id)
-    console.log(currentDiv)
-    console.log(id)
+  function updateDiv(info: any, id: number) {
+    if (!constraintsRef.current) return;
+
+    const rect = constraintsRef.current.getBoundingClientRect();
+
+    // ✅ Clamp x and y within canvas bounds to prevent negative or overflow
+    const x = Math.max(0, Math.min(Math.round(info.point.x - rect.left), canvasSize.x));
+    const y = Math.max(0, Math.min(Math.round(info.point.y - rect.top), canvasSize.y));
+
+    setDivs(prev =>
+      prev.map(div =>
+        div.id === id ? { ...div, xPosition: x, yPosition: y } : div
+      )
+    );
   }
 
   // shapes button
@@ -195,9 +205,9 @@ export default function Home() {
                 <motion.div
                   drag
                   dragConstraints={constraintsRef}
-                  dragElastic={0.5}
+                  dragElastic={0}
                   dragMomentum={false}
-                  onDrag={ info => updateDiv(info,div.id)}
+                  onDragEnd={(e, info) => updateDiv(info, div.id)}
                   key={div.id}
                   className="w-4 h-4 rounded-full bg-red-500 absolute cursor-grab border-2 border-red-700 shadow-lg z-10"
                   style={{
