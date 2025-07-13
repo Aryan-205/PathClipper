@@ -1,0 +1,66 @@
+[
+  {
+    "img_name": "/Custom.png",
+    "name": "Custom"
+  },
+  {
+    "img_name": "/Triangle.png",
+    "name": "Triangle"
+  },
+  {
+    "img_name": "/square.png",
+    "name": "Square"
+  },
+  {
+    "img_name": "/circle.png",
+    "name": "Circle"
+  },
+  {
+    "img_name": "/ellipse.png",
+    "name": "Ellipse"
+  },
+  {
+    "img_name": "trapezoid.png",
+    "name": "Trapezoid"
+  },
+  {
+    "img_name": "parallelogram.png",
+    "name": "Parallelogram"
+  },
+  {
+    "img_name": "rhombus.png",
+    "name": "Rhombus"
+  },
+  {
+    "img_name": "leftArrow.png",
+    "name": "Left arrow"
+  },
+  {
+    "img_name": "/rightArrow.png",
+    "name": "Right arrow"
+  },
+  {
+    "img_name": "/leftPoint.png",
+    "name": "Left Point"
+  },
+  {
+    "img_name": "/rightPoint.png",
+    "name": "Right Point"
+  },
+  {
+    "img_name": "/pentagon.png",
+    "name": "Pentagon"
+  },
+  {
+    "img_name": "/hexagon.png",
+    "name": "Hexagon"
+  },
+  {
+    "img_name": "/star.png",
+    "name": "Star"
+  },
+  {
+    "img_name": "/cross.png",
+    "name": "Cross"
+  }
+]
