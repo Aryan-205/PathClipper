@@ -12,12 +12,12 @@
     "name": "Square"
   },
   {
-    "img_name": "/circle.png",
-    "name": "Circle"
+    "img_name": "/message.png",
+    "name": "Message"
   },
   {
-    "img_name": "/ellipse.png",
-    "name": "Ellipse"
+    "img_name": "/ben.png",
+    "name": "Ben"
   },
   {
     "img_name": "trapezoid.png",
